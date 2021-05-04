@@ -1,0 +1,35 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+
+
+.pane{
+	 -fx-background-color: #12313b;
+	
+	 -fx-border-color:black;
+	 -fx-border-radius: 18 18 18 18;
+	 -fx-background-radius:  18 18 18 18; 
+}
+.leftside{
+	-fx-border-radius: 18 0 0 18;
+	 -fx-border-color:black;
+}
+.innerPane{
+	-fx-background-color: #12313b;
+
+
+}
+.button{
+	 -fx-background-color: #003366;
+	 -fx-text-inner-color: white;
+	 
+}
+.displayPane{
+	 -fx-border-color:black;
+	 -fx-border-radius: 18 18 18 18;
+	 -fx-background-radius:  18 18 18 18; 
+}
+
+.textfield{
+	-fx-text-inner-color: white;
+	}

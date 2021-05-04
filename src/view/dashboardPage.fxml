@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="845.0" styleClass="innerPane" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashboardPageController">
+   <children>
+      <HBox alignment="CENTER" layoutX="59.0" layoutY="48.0" spacing="40.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="134.0" prefWidth="216.0" style="-fx-background-color: #515151;" styleClass="displayPane">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="218.0" text="    Dias totales" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIcon fill="#d9d1d1" glyphName="CALENDAR" rotate="0.5" size="2em" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lbl_total" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="213.0" text="30" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="134.0" prefWidth="216.0" style="-fx-background-color: #515151;" styleClass="displayPane">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="218.0" text="   Dias disponibles" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIcon fill="#d9d1d1" glyphName="CHECK_SQUARE" rotate="0.5" size="2em" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lbl_available" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="213.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="134.0" prefWidth="216.0" style="-fx-background-color: #515151;" styleClass="displayPane">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="218.0" text="   Han utilizado" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIcon fill="#d9d1d1" glyphName="MINUS_SQUARE" rotate="0.5" size="2em" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lbl_used" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="213.0" text="20" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

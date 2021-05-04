@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="748.0" prefWidth="1080.0" styleClass="pane" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminController.AdminMainPageController">
+   <left>
+      <AnchorPane prefHeight="596.0" prefWidth="162.0" styleClass="leftside" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="-14.0" layoutY="32.0" spacing="40.0">
+               <children>
+                  <HBox prefHeight="45.0" prefWidth="171.0">
+                     <children>
+                        <JFXButton fx:id="accessBtn" buttonType="RAISED" onAction="#accesssBtnAction" prefHeight="42.0" prefWidth="170.0" text="Admin Acceso" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="COGS" size="2.5em" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="46.0" prefWidth="132.0">
+                     <children>
+                        <JFXButton fx:id="btnLeave" buttonType="RAISED" onAction="#leaveManagementAction" prefHeight="42.0" prefWidth="184.0" text="Admin Vacaciones" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="TASKS" size="2.5em" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="171.0">
+                     <children>
+                        <JFXButton buttonType="RAISED" onAction="#logoutAction" prefHeight="42.0" prefWidth="170.0" text="Salir" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="2.5em" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="82.0" prefWidth="1078.0" style="-fx-background-color: #3d3d3d;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="393.0" layoutY="19.0" prefHeight="38.0" prefWidth="409.0" text="VACACIONES SISTEMA DE GESTIÓN" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1028.0" layoutY="15.0" onAction="#crossAction" prefHeight="26.0" prefWidth="35.0" style="-fx-background-color: RED;" text="X" textFill="WHITE" />
+            <JFXButton layoutX="979.0" layoutY="16.0" onAction="#minimizeAction" prefHeight="26.0" prefWidth="35.0" style="-fx-background-color: GREEN;" text="-" textFill="WHITE" />
+            <FontAwesomeIcon fill="#d1d0d0" glyphName="USER" layoutX="53.0" layoutY="51.0" size="4EM" wrappingWidth="46.400020599365234" />
+            <Label layoutX="54.0" layoutY="55.0" prefHeight="26.0" prefWidth="58.0" text="ADMIN" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

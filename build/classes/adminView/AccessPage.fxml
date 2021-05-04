@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="887.0" styleClass="innerPane" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminController.AccessPageController">
+   <children>
+      <ScrollPane layoutX="83.0" layoutY="180.0">
+         <content>
+            <TableView fx:id="employeeTable" onMouseClicked="#onTableClick" prefHeight="211.0" prefWidth="699.0">
+              <columns>
+                <TableColumn fx:id="firstNameColumn" prefWidth="125.59994506835938" text="Nombre" />
+                  <TableColumn fx:id="lastNameColumn" prefWidth="125.59994506835938" text="Apellido" />
+                  <TableColumn fx:id="emailColumn" prefWidth="153.60003662109375" text="Email" />
+                  <TableColumn fx:id="passwordColumn" prefWidth="158.40005493164062" text="Contrasena" />
+                  <TableColumn fx:id="statusColumn" prefWidth="137.5999755859375" text="Estado" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <HBox layoutX="128.0" layoutY="72.5999984741211" spacing="30.0">
+         <children>
+            <JFXRadioButton fx:id="allRadio" onAction="#allRadioAction" prefHeight="18.0" prefWidth="82.0" selected="true" text="Todo" textFill="WHITE">
+               <unSelectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </unSelectedColor>
+               <toggleGroup>
+                  <ToggleGroup fx:id="myradio" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="pendingRadio" onAction="#pendingRadioAction" text="Pendiente" textFill="WHITE" toggleGroup="$myradio">
+               <unSelectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </unSelectedColor>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="approvedRadio" onAction="#approvedRadioAction" text="Abrbadas" textFill="WHITE" toggleGroup="$myradio">
+               <unSelectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </unSelectedColor>
+            </JFXRadioButton>
+         </children>
+      </HBox>
+      <JFXTextField fx:id="txt_search" focusColor="#839adf" layoutX="284.0" layoutY="121.0" prefHeight="26.0" prefWidth="377.0" styleClass="textfield" unFocusColor="#efbfbf" />
+      <Label layoutX="75.0" layoutY="32.0" prefHeight="18.0" prefWidth="134.0" text="Tabla :" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="statusDropDown" focusColor="#626879" layoutX="265.0" layoutY="448.0" prefHeight="26.0" prefWidth="162.0" style="-fx-background-color: white;" styleClass="textfield" unFocusColor="#bcb7b7" />
+      <Label layoutX="83.0" layoutY="452.0" prefHeight="18.0" prefWidth="149.0" text="Cambio de status" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="536.0" layoutY="444.0" onAction="#updateAction" prefHeight="34.0" prefWidth="217.0" style="-fx-background-color: GREEN;" text="Actualizar Inicio de sesion" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="83.0" layoutY="417.0" prefHeight="18.0" prefWidth="49.0" text="Usuario:" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_email" layoutX="156.0" layoutY="417.0" prefHeight="18.0" prefWidth="218.0" text="XXXXXXXXXXX" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="131.0" prefHeight="18.0" prefWidth="134.0" text="Escriba el nombre" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
