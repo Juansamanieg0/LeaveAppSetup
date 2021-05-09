@@ -207,6 +207,17 @@ Esta preparado para correr en Windows
 
 Uso
 Se anexa video de uso para emleados internos, de acuerdo al perfil del usuario.
+Esta en una version de aplicacion de vacaciones para empleados
+
+Solicitar acceso de usuario
+
+Ingresar usuario
+
+solicitar vacaciones
+
+Administrador
+
+Ingresar, autorizar usuario y autorizar vacaciones
 
 Contribucion
 
