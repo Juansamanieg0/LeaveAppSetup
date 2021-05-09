@@ -183,10 +183,48 @@ build.xml
 database.db
 
 
+Requerimientos
+
+Sistema windows
+Instalar archivo .exe
+
+Diseño
+
+    Login.
+    Interfaz para visualizar el archivo.
+    Ventana en donde podemos ver vacaciones y Ventana de reporte.
+    Interfaz para buscar y solicitar vacaciones.
+    Enviar
+
+Base de datos
+Local
+
+Instalacion
+Correr archivo .exe
+
+Version de Java
+Esta preparado para correr en Windows
+
+Uso
+Se anexa video de uso para emleados internos, de acuerdo al perfil del usuario.
+
+Contribucion
 
 
+    Abrimos el repositorio
+    En el branch "master" podemos encontrar la version mas actual del software y la mas completa y estable
+    Del lado derecho tenemos la opcion de clone or download
+    Tenemos dos opciones a elegir (abrir en el equipo o descargar como zip)
+    Cualquiera de las 2 opciones nos puede servir
 
 
+Roadmap
 
+Con forme se implemente la aplicacion dentro de la empresa y con la experiencia de los usuarios, podremos identificar errores y con eso ellos nos podran notificar y decir que es lo que podemos mejorar en el software. S
+
+
+Créditos
+
+Desarrollado por: Juan Miguel López-Vázquez Samaniego
 
 
